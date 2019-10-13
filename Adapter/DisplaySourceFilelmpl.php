@@ -7,18 +7,25 @@ require_once 'ShowFile.php';
 /**
  * DisplaySourceFile実装したクラス
  */
-class DisplaySourceFilelmpl extends ShowFile implements DisplaySourceFile {
+class DisplaySourceFilelmpl implements DisplaySourceFile {
+
+    /**
+     * ShowFileクラスのインスタンスを保持する
+     */
+    private $show_file;
+
     /**
      * コンストラクタ 
      */
     public function __construct($filename) {
-        parent::__construct($filename);
+        $this->show_file = new ShowFile($filename);
     }
+
     /**
      * 指定されたソースファイルをハイライト表示
      */
     public function display() {
-        parent::showHighlight();
+        $this->show_file->showHighlight();
     }
 }
 ?>
