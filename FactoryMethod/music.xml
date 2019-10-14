@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<artists>
+    <artist name="ルートベートヴェン">
+        <music name="ピアノソナタ"/>
+    </artist>
+    <artist name="ヴォルフガング"/>
+        <music name="魔">
+    </artist>
+    <artist name="セレナーデト">
+        <music name="長調"/>
+    </artist>
+    <artist name="アントニンドヴォルザーク">
+        <music name="新世界より"/>
+    </artist>
+</artists>
